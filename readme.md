@@ -1,3 +1,13 @@
+## Runing Project
+- npm install
+- npm run dev
+- copy .env.example to .env
+- set your value in .env for example:
+    - database connection
+    - other variables that are in .env
+- php artisan serve
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
