@@ -21,3 +21,6 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('welcome');
 })->name('login');
+
+
+Route::get('/', 'MainController@index');
