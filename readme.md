@@ -1,14 +1,12 @@
 <p align="center"><img src="public/img/سفال-خام.jpg"></p>
 
 ## Running Project
-- npm install
-- npm run dev
 - composer install
 - copy .env.example to .env
 - set your value in .env for example:
     - database connection
     - other variables that are in .env
-- php artisan migrate
+- import sofal.sql ( file in root directory ) into your database (which name is: sofal)
 - php artisan serve
 
 

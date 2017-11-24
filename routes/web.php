@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('product');
-});
+//Route::get('/', function () {
+//    return view('product');
+//});
 
 Route::get('/register', function () {
     return view('product');
