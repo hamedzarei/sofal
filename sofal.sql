@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 27, 2017 at 10:23 PM
+-- Generation Time: Nov 28, 2017 at 12:41 AM
 -- Server version: 10.0.31-MariaDB-1~trusty
 -- PHP Version: 7.1.8-2+ubuntu14.04.1+deb.sury.org+4
 
@@ -71,7 +71,10 @@ INSERT INTO `images` (`id`, `path`, `relatedEntity_id`, `relatedEntity_type`, `c
 (4, 'img/category/4.jpg', 6, 'App\\Category', NULL, NULL),
 (5, 'img/category/2.jpg', 7, 'App\\Category', NULL, NULL),
 (6, 'img/category/1.jpg', 8, 'App\\Category', NULL, NULL),
-(7, 'img/product/1.jpg', 1, 'App\\Product', NULL, NULL);
+(7, 'img/product/1.jpg', 1, 'App\\Product', NULL, NULL),
+(8, 'img/product/2.jpg', 1, 'App\\Product', NULL, NULL),
+(9, 'img/product/3.jpg', 1, 'App\\Product', NULL, NULL),
+(10, 'img/product/4.jpg', 1, 'App\\Product', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -117,12 +120,12 @@ CREATE TABLE `password_resets` (
 CREATE TABLE `products` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `size` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `kind` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `washable` int(11) NOT NULL,
-  `potsherd_kind` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `material` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `cost` double NOT NULL,
   `colors` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `rating` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -135,8 +138,8 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `description`, `code`, `size`, `kind`, `washable`, `potsherd_kind`, `cost`, `colors`, `rating`, `category_id`, `created_at`, `updated_at`) VALUES
-(1, 'سفال اول', 'توضیحات جالب\r\n', 'DKC-123', '15*48', 'دسته اول', 1, 'دسته دوم', 15000, 'blue,red', '4.3', '1', NULL, NULL);
+INSERT INTO `products` (`id`, `name`, `description`, `code`, `size`, `kind`, `washable`, `material`, `cost`, `colors`, `rating`, `category_id`, `created_at`, `updated_at`) VALUES
+(1, 'سفال اول', 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.', 'DKC-123', '15*48', 'دسته اول', 1, 'سرامیک', 15000, 'blue,red', '4.3', '1', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -201,7 +204,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `migrations`
 --

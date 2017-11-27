@@ -16,7 +16,7 @@
     <div class="row logo-row">
         <div class="col-2"></div>
         <div class="col-4 logo">
-            <img src="img/logo.png" alt="">
+            <img src="{{ URL::asset('img/logo.png') }}" alt="">
         </div>
         <div class="col-2">
 

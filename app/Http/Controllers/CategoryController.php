@@ -14,7 +14,10 @@ class CategoryController extends Controller
         $cat = Category::with('products')->with('products.images')->where('id', $index)->first()->toArray();
         return view('category')->with([
             'title' => $cat['name'],
-            'products' => $cat['products']
+            'products' => $cat['products'],
+            'nav' => [
+                'categories' => Category::all(['id', 'name'])->toArray()
+            ]
         ]);
     }
 }

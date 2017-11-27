@@ -10,8 +10,18 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">   صفحه اصلی <span class="sr-only">(current)</span> <i class="fa fa-home"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">صفحه محصولات</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        محصولات
+                    </a>
+                    <div class="dropdown-menu">
+                        @foreach($nav['categories'] as $category)
+                            <a class="dropdown-item" href="/category/{{ $category['id'] }}">{{ $category['name'] }}</a>
+                        @endforeach
+                        {{--<a class="dropdown-item" href="#">Link 2</a>--}}
+                        {{--<a class="dropdown-item" href="#">Link 3</a>--}}
+                    </div>
                 </li>
             </ul>
             <form class="col-4 form-inline my-2 my-lg-0">

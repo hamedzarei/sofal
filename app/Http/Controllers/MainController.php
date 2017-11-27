@@ -13,7 +13,10 @@ class MainController extends Controller
 
         return view('main')->with([
             'title' => 'صفحه اصلی',
-            'cats' => Category::with('images')->get()->toArray()
+            'cats' => Category::with('images')->get()->toArray(),
+            'nav' => [
+                'categories' => Category::all(['id', 'name'])->toArray()
+            ]
         ]);
     }
 }

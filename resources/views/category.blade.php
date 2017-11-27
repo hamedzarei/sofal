@@ -38,7 +38,9 @@
                         @foreach($products as $product)
                             <div class="box center">
                                 <div class="box-content">
-                                    <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                                    <a href="/product/{{ $product['id'] }}">
+                                        <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                                    </a>
                                 </div>
                                 <div class="box-header">
                                     {{ $product['name'] }}
