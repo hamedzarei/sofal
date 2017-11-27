@@ -4,15 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Product extends Model
 {
     public function images()
     {
         return $this->morphMany('App\Image', 'relatedEntity');
     }
 
-    public function products()
+    public function category()
     {
-        return $this->hasMany('App\Product');
+        return $this->belongsTo('App\Category');
     }
 }

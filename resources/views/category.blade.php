@@ -32,20 +32,20 @@
         </div>
         <div class="col-6 content">
             <div class="container-fluid">
-                <div class="row">دسته ها</div>
+                <div class="row">{{ $title }}</div>
                 <div class="row">
-                    @foreach($cats as $cat)
-                        <div class="box center">
-                            <div class="box-content">
-                                <a href="/category/{{ $cat['id'] }}">
-                                    <img src="{{ URL::asset($cat['images'][0]['path']) }}" alt="">
-                                </a>
+                    @if($products)
+                        @foreach($products as $product)
+                            <div class="box center">
+                                <div class="box-content">
+                                    <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                                </div>
+                                <div class="box-header">
+                                    {{ $product['name'] }}
+                                </div>
                             </div>
-                            <div class="box-header">
-                                {{ $cat['name'] }}
-                            </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    @endif
                 </div>
             </div>
 

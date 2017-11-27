@@ -24,3 +24,7 @@ Route::get('/login', function () {
 
 
 Route::get('/', 'MainController@index');
+
+Route::get('/category/{index?}', 'CategoryController@getOne');
+
+Route::get('/product/{index?}', 'ProductController@getOne');

@@ -21,6 +21,19 @@
 * {
     font-family: BNazanin;
 }
+a {
+    text-decoration: none;
+}
+a .box {
+    text-decoration: none;
+}
+a .box-header {
+    text-decoration: none;
+}
+a .box-content {
+    text-decoration: none;
+}
+
 html {
     color: #222;
     font-size: 1em;
@@ -57,6 +70,7 @@ i {
     /*padding-top: 0;*/
     border: 1px solid #e0e0e0;
     margin-bottom: 21px;
+    margin-left: 10px;
     /*padding: 2px;*/
 }
 .box .row {
@@ -66,7 +80,6 @@ i {
 .box .box-header {
     background: #f8f9fa;
     height: 50px;
-    text-align: center;
     /*padding: 10px;*/
     /*margin: ;*/
     /*margin-left: 0.1px;*/
@@ -74,8 +87,14 @@ i {
 }
 .box .box-content {
     min-height: 50px;
-    text-align: center;
     /*max-height: 60px;*/
+}
+
+.box.center .box-header {
+    text-align: center;
+}
+.box.center .box-content {
+    text-align: center;
 }
 
 .main {

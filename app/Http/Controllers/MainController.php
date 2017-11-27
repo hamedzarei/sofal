@@ -11,8 +11,8 @@ class MainController extends Controller
     public function index()
     {
 
-//        dd();
         return view('main')->with([
+            'title' => 'صفحه اصلی',
             'cats' => Category::with('images')->get()->toArray()
         ]);
     }

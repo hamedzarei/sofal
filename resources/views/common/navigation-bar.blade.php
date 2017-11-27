@@ -8,7 +8,7 @@
             <div class="col-2"></div>
             <ul class="col-6 navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">   صفحه اصلی <span class="sr-only">(current)</span> <i class="fa fa-home"></i></a>
+                    <a class="nav-link" href="/">   صفحه اصلی <span class="sr-only">(current)</span> <i class="fa fa-home"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">صفحه محصولات</a>
