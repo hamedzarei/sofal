@@ -5,3 +5,4 @@
 {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>--}}
 <script src="{{ URL::asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
 <script src="{{ URL::asset('js/global.js') }}"></script>
+<script src="{{ URL::asset('js/app.js') }}"></script>

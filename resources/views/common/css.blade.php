@@ -4,3 +4,4 @@
 <link rel="stylesheet" href="{{ URL::asset('css/vendor/normalize.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/common.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
