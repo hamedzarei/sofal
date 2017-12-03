@@ -11,6 +11,11 @@ class Product extends Model
         return $this->morphMany('App\Image', 'relatedEntity');
     }
 
+    public function comments()
+    {
+        return $this->morphMany('App\Comment', 'relatedEntity');
+    }
+
     public function category()
     {
         return $this->belongsTo('App\Category');
