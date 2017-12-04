@@ -32,7 +32,11 @@
         <div class="col-5">
             <div class="container images">
                 <div class="row main-image">
-                    <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                    @if(isset($product['images'][0]))
+                        <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                    @else
+                        <img src="{{ URL::asset('img/no.png') }}" alt="">
+                    @endif
                 </div>
                 <div class="row">
                     @if($product['images'])

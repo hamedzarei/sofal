@@ -49,8 +49,13 @@ Route::get('/password/reset', function () {
 })->name('password.request');
 
 Route::get('/panel', function () {
-    return view('auth.panel');
+    return view('auth.panel')->with([
+        'title' => 'پنل مدیریت',
+        'no_header_image' => true
+    ]);
 })->name('panel');
 
 Route::get('/panel/product/add', 'ProductController@index')->name('panel.product.add');
+
+Route::post('/product', 'ProductController@create')->name('product.create');
 //Route::get('/home', 'HomeController@index')->name('home');

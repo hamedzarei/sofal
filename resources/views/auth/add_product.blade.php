@@ -1,4 +1,5 @@
-<form method="POST" action="">
+<form method="POST" action="{{ route('product.create') }}" enctype="multipart/form-data">
+    {{ csrf_field() }}
     <div class="form-group row">
         <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">نام</label>
         <div class="col-sm-10">
@@ -46,7 +47,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label">رنگ</label>
         <div class="col-sm-10">
-            <input type="text" name="cost" class="form-control" placeholder="blue, red">
+            <input type="text" name="colors" class="form-control" placeholder="blue, red">
         </div>
     </div>
 
@@ -65,9 +66,9 @@
     </div>
 
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">جنس</label>
+        <label class="col-sm-2 col-form-label">نوع</label>
         <div class="col-sm-10">
-            <input type="text" name="material" class="form-control" placeholder="1">
+            <input type="text" name="kind" class="form-control" placeholder="1">
         </div>
     </div>
 

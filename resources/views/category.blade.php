@@ -39,7 +39,11 @@
                             <div class="box center">
                                 <div class="box-content">
                                     <a href="/product/{{ $product['id'] }}">
-                                        <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                                        @if(isset($product['images'][0]))
+                                            <img src="{{ URL::asset($product['images'][0]['path']) }}" alt="">
+                                        @else
+                                            <img src="{{ URL::asset('img/no.png') }}" alt="">
+                                        @endif
                                     </a>
                                 </div>
                                 <div class="box-header">
