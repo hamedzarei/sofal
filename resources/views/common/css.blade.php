@@ -5,3 +5,4 @@
 <link rel="stylesheet" href="{{ URL::asset('css/global.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/common.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('css/vendor/toastr.min.css') }}">

@@ -6,3 +6,4 @@
 <script src="{{ URL::asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
 <script src="{{ URL::asset('js/global.js') }}"></script>
 <script src="{{ URL::asset('js/app.js') }}"></script>
+<script src="{{ URL::asset('js/vendor/toastr.min.js') }}"></script>

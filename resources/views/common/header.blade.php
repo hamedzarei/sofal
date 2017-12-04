@@ -38,16 +38,35 @@
         </div>
     </div>
 
-    <div class="row logo-row">
-        <div class="col-2"></div>
-        <div class="col-4 logo">
-            <img src="{{ URL::asset('img/logo.png') }}" alt="">
-        </div>
-        <div class="col-2">
+    @if(isset($no_header_image))
+        @if($no_header_image == true)
 
-        </div>
-        <div class="col-4">
+        @else
+            <div class="row logo-row">
+                <div class="col-2"></div>
+                <div class="col-4 logo">
+                    <img src="{{ URL::asset('img/logo.png') }}" alt="">
+                </div>
+                <div class="col-2">
 
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+        @endif
+    @else
+        <div class="row logo-row">
+            <div class="col-2"></div>
+            <div class="col-4 logo">
+                <img src="{{ URL::asset('img/logo.png') }}" alt="">
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-4">
+
+            </div>
         </div>
-    </div>
+    @endif
 </div>

@@ -11,6 +11,9 @@
     font-family: BNazanin;
     text-align: right;
 }
+a:hover {
+    cursor: pointer;
+}
 form * {
     font-family: BNazanin;
 }
@@ -116,4 +119,13 @@ i {
 .no-decorated,
 .no-decorated:hover {
     text-decoration: none;
+}
+
+.dir-fa {
+    direction: rtl;
+    text-align: right;
+}
+.dir-en {
+    direction: ltr ;
+    text-align: left;
 }

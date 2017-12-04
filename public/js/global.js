@@ -1,3 +1,1 @@
-$(document).ready(function () {
-    // $('*[data-link]').on
-});
+toastr.options.newestOnTop = false;
