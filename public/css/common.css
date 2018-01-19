@@ -11,6 +11,9 @@
     font-family: BNazanin;
     text-align: right;
 }
+input, button {
+    font-family: BNazanin !important;
+}
 a:hover {
     cursor: pointer;
 }

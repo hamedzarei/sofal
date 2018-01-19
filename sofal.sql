@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 05, 2017 at 12:28 AM
+-- Generation Time: Jan 20, 2018 at 02:22 AM
 -- Server version: 10.0.31-MariaDB-1~trusty
 -- PHP Version: 7.1.8-2+ubuntu14.04.1+deb.sury.org+4
 
@@ -144,17 +144,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `description`, `code`, `size`, `kind`, `washable`, `material`, `cost`, `colors`, `rating`, `category_id`, `created_at`, `updated_at`) VALUES
-(1, 'سفال اول', 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.', 'DKC-123', '15*48', 'دسته اول', 1, 'سرامیک', 15000, 'blue,red', '4.3', '1', NULL, NULL),
-(2, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:04:12', '2017-12-04 17:04:12'),
-(3, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:05:10', '2017-12-04 17:05:10'),
-(4, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:09:53', '2017-12-04 17:09:53'),
-(5, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:10:05', '2017-12-04 17:10:05'),
-(6, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:11:37', '2017-12-04 17:11:37'),
-(7, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:12:26', '2017-12-04 17:12:26'),
-(8, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:13:19', '2017-12-04 17:13:19'),
-(9, 'f', 'f', 'sdf', '123', 'دسته اول', 1, 'ser', 88, 'blue', '0', '1', '2017-12-04 17:13:27', '2017-12-04 17:13:27'),
-(10, 'f', 's', 'a', '13', '1', 1, 'ser', 4, 'blue', '0', '1', '2017-12-04 17:17:55', '2017-12-04 17:17:55'),
-(11, 'f', 'f', 'w', '123', '1', 1, 'ser', 5, 'blue', '0', '1', '2017-12-04 17:20:04', '2017-12-04 17:20:04');
+(1, 'سفال اول', 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.', 'DKC-123', '15*48', 'دسته اول', 1, 'سرامیک', 15000, 'blue,red', '4.3', '1', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -178,12 +168,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'hamed', 'hamedzarei.7232@gmail.com', '$2y$10$Iy3daW8.2qMLUukc5Ek9Lef3wlC0.F9Yv0p1q4YN4409wDtKZbdtK', 'regular', 'JCokG25jQxT0k3twMr5KdKOBfaPIjuolX4zAM7wKzWCBj0jPoCpl5610ZM6c', '2017-12-02 16:21:41', '2017-12-02 16:21:41'),
-(2, 'hamed12', 'hamedzare.7232@gmail.com', '$2y$10$1JCnSB7hiis0fSaaSuH.OugsBwQcao5H8qJpc4kjdouFuCfthjn2G', 'regular', NULL, '2017-12-02 16:33:12', '2017-12-02 16:33:12'),
-(3, 'hamed', 'hamedzarei.723@gmail.com', '$2y$10$NNN3hP8YmNxEvZOzgSmACOqS34wtXh5kBuuxXtg8yuNJC2bHMrLB.', 'regular', 'tzz624eKbBGPZXMzYCgyYiyROMUWsh7U8Irpjmm8sSaQn8fhihKpDBSSKOQ6', '2017-12-04 13:54:36', '2017-12-04 13:54:36'),
-(4, 'hamed', 'hamedzarei.723@gmail.com', '$2y$10$QXz7wzig2ob9bVtrmDYIjO0maPCbOCDUC99suDIB7YFKqjPnUL3MS', 'regular', NULL, '2017-12-04 13:56:23', '2017-12-04 13:56:23'),
-(5, 'admin', 'admin@admin.com', '$2y$10$mDmoJyFyM6evDXi0RnHKje0fsjhbo8Rjy.Tx3P8TrT2caOlSMHYmO', 'admin', 'gEblpstcsVQqyhjYu8YBSK95HCeZjLiumAfDKLpKH92ENVeQZZUTXS12EC5U', '2017-12-04 14:09:02', '2017-12-04 14:09:02'),
-(6, 'user', 'user@user.com', '$2y$10$SH6WpEmxIH4khTaRc8h0Je8gHfdxche46/lbNuaybQdolDtsxtIXe', 'regular', 'LMg8BntaEyK0S3zQUatqhrjpMUCb7VkKKLxsYtpJ4aMrOuM5LgztIQFyE5ne', '2017-12-04 14:09:23', '2017-12-04 14:09:23');
+(5, 'admin', 'admin@admin.com', '$2y$10$NNN3hP8YmNxEvZOzgSmACOqS34wtXh5kBuuxXtg8yuNJC2bHMrLB.', 'admin', 'fIj2cwnVWV6lvgTegtrWtyBTOSl6lOIQR5REVZ9hGhSPAtlGkrAuW0KW7zwm', '2017-12-04 14:09:02', '2017-12-04 14:09:02'),
+(6, 'user', 'user@user.com', '$2y$10$NNN3hP8YmNxEvZOzgSmACOqS34wtXh5kBuuxXtg8yuNJC2bHMrLB.', 'regular', 'ae9Dj7lLbULQlgfgWII5P4LD0OCeXylO0RankKY0tClcYdgyhB21rYYZ0bZ5', '2017-12-04 14:09:23', '2017-12-04 14:09:23');
 
 --
 -- Indexes for dumped tables
@@ -247,7 +233,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
